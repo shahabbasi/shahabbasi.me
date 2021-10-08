@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2&display=swap" rel="stylesheet">
+  <title>Document</title>
+  <style>
+    :root {
+      --primary: #1abc9c;
+      --transition-duration: 0.2s;
+    }
+    body {
+      margin: 0;
+      font-family: 'Exo 2', sans-serif;
+      background: whitesmoke;
+      min-height: 100vh;
+    }
+    ::selection {
+      background: var(--primary);
+      color: white;
+    }
+    #wrapper {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    a {
+      display: inline-block;
+      color: var(--primary);
+      text-decoration: none;
+      transition-duration: var(--transition-duration); 
+    }
+    a:hover {
+      transform: scale(1.1);
+    }
+    .identity {
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      width: 100%;
+      max-width: 250px;
+      padding: 16px 24px;
+
+      background-color: white;
+    }
+    .identity__logo {
+      border-radius: 50%;
+      width: 128px;
+      height: 128px;
+    }
+    .identity__name {
+      margin: 0;
+    }
+    .identity__title {
+      margin: 0;
+      color: gray;
+      font-size: 18px;
+    }
+    .identity__bio {
+      text-align: justify;
+    }
+    .identity__social-wrapper {
+      display: flex;
+      align-items: center;
+    }
+    .identity__or {
+      margin: 0 16px;
+      opacity: 0.4;
+      font-size: 14px;
+    }
+    .identity__socials {
+      display: flex;
+      align-items: center;
+      padding: 8px 0;
+    }
+    .identity__social-item img {
+      width: 16px;
+      height: 16px;
+    }
+    .identity__social-item:not(:last-child) {
+      margin-right: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div id="wrapper">
+    <div class="identity">
+      <img class="identity__logo" src="./assets/alish.jpg" />
+
+      <h1 class="identity__name">
+        Ali Shahabbasi
+      </h1>
+      <h2 class="identity__title">
+        Software Engineer
+      </h2>
+      <p class="identity__bio">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque eius fugit dolores ex voluptatibus,
+        libero saepe pariatur. Facilis, sint, nesciunt magnam voluptatem cum, placeat earum reprehenderit amet atque perferendis autem?
+      </p>
+      <div class="identity__social-wrapper">
+        <div class="identity__mail">
+          <a href="mailto:shahabbasi.ali.98@gmail.com" target="_blank">
+            Mail Me
+          </a>
+        </div>
+  
+        <div class="identity__or">
+          |
+        </div>
+  
+        <div class="identity__socials">
+          <a class="identity__social-item" href="#" target="_blank">
+            <img src="./assets/twitter.png" alt="twitter" />
+          </a>
+          <a class="identity__social-item" href="#" target="_blank">
+            <img src="./assets/linkedin.png" alt="LinkedIn" />
+          </a>
+          <a class="identity__social-item" href="#" target="_blank">
+            <img src="./assets/telegram.png" alt="Telegram" />
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
